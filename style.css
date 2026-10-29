@@ -1,0 +1,196 @@
+/* Reset & Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header & Navigasi */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Bulatan Logo Biru */
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+}
+
+.brand-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Menu Navigasi */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Garis bawah aktif untuk indikator menu */
+nav ul li a.active {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+
+/* Container Utama */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    background-color: #b8a36a; /* Warna biru sesuai wireframe */
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card-image-box {
+    background-color: #e5e7eb; /* Kotak area gambar di dalam card */
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    color: white;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* ==========================================
+   LAYOUT INFORMASI / ABOUT: Kotak Besar
+   ========================================== */
+.info-box-large {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/background.png') no-repeat center center/cover;
+    border-radius: 12px;
+    padding: 250px;
+    color: white;
+    min-height: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 10px; 
+}
+
+.info-box-large h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.info-box-large p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   LAYOUT LOGIN FORM
+   ========================================== */
+.login-box {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #3b82f6;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3b82f6;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-login:hover {
+    background-color: #2563eb;
+}
+
+h2 {
+    align-items: left;
+}

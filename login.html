@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nama Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-circle"></div>
+            <span class="brand-name">NAMA WEBSITE</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="informasi.html">INFORMASI</a></li>
+                <li><a href="login.html" class="active">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-box">
+            <h2>FORM LOGIN</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Masukkan Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Masukkan Password" required>
+                </div>
+                <button type="submit" class="btn-login">LOGIN</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
